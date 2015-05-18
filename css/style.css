@@ -1,0 +1,392 @@
+section {
+  z-index: 1000;
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 33%;
+  height: 33%
+}
+
+section.a11 {
+  top: 0;
+  left: 0
+}
+
+section.a12 {
+  top: 0;
+  left: 33%;
+  width: 34%
+}
+
+section.a13 {
+  top: 0;
+  left: 67%
+}
+
+section.a21 {
+  top: 33%;
+  left: 0;
+  height: 34%
+}
+
+section.a22 {
+  top: 33%;
+  left: 33%;
+  width: 34%;
+  height: 34%
+}
+
+section.a23 {
+  top: 33%;
+  left: 67%;
+  height: 34%
+}
+
+section.a31 {
+  top: 67%;
+  left: 0
+}
+
+section.a32 {
+  top: 67%;
+  left: 33%;
+  width: 34%
+}
+
+section.a33 {
+  top: 67%;
+  left: 67%
+}
+
+.animate {
+  transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear
+}
+
+.animate.slow {
+  transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear
+}
+
+article {
+  z-index: 100;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+p {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  bottom: 10px;
+  left: 15px;
+  width: 500px;
+  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold
+}
+
+/* head */
+div.head {
+  z-index: 105;
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin: -180px -200px;
+  width: 400px;
+  height: 360px;
+  background: rgba(237, 144, 23, 1)
+}
+
+div.head {
+  border-top-left-radius: 200px 230px;
+  border-top-right-radius: 200px 230px;
+  border-bottom-left-radius: 200px 130px;
+  border-bottom-right-radius: 200px 130px;
+  background: -moz-linear-gradient(top, rgba(246, 230, 180, 1) 0%, rgba(237, 144, 23, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(246, 230, 180, 1) 0%, rgba(237, 144, 23, 1) 100%);
+}
+
+/* eyes */
+div.eye {
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin: -50px -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: white
+}
+
+div.eye {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 50%, rgba(229, 229, 229, 1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 50%, rgba(229, 229, 229, 1) 100%);
+}
+
+div.eye.left {
+  margin-left: -125px
+}
+
+div.eye.right {
+  margin: -50px 0 0 25px
+}
+
+div.eye>.closed {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  left: 0;
+  margin: 0;
+  width: 100px;
+  height: 0px;
+  background: black
+}
+
+div.eye>.closed.top {
+  top: 0;
+  border-top-left-radius: 50px 50px;
+  border-top-right-radius: 50px 50px;
+  background: -moz-linear-gradient(top, rgba(237, 144, 23, 1) 0%, rgba(246, 230, 180, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(237, 144, 23, 1) 0%, rgba(246, 230, 180, 1) 100%);
+}
+
+div.eye>.closed.bottom {
+  bottom: 0;
+  border-bottom-left-radius: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+  background: -moz-linear-gradient(top, rgba(246, 230, 180, 1) 0%, rgba(237, 144, 23, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(246, 230, 180, 1) 0%, rgba(237, 144, 23, 1) 100%);
+}
+
+div.eye>.dot {
+  display: block;
+  overflow: hidden;
+  margin: 25px 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: black
+}
+
+/* nose */
+div.nose {
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin: 60px -15px;
+  width: 30px;
+  height: 10px;
+  background: -moz-linear-gradient(top, rgba(237, 144, 23, 0.2) 0%, rgba(237, 144, 23, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(237, 144, 23, 0.2) 0%, rgba(237, 144, 23, 1) 100%);
+}
+
+div.nose {
+  border-bottom-left-radius: 15px 10px;
+  border-bottom-right-radius: 15px 10px;
+}
+
+/* mouth */
+
+div.mouth {
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin: 100px -50px;
+  width: 100px;
+  height: 20px;
+  background: red;
+}
+
+div.mouth {
+  border-bottom-left-radius: 50px 20px;
+  border-bottom-right-radius: 50px 20px;
+}
+
+/* eyebrow */
+div.eyebrow {
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin: -80px -30px;
+  width: 60px;
+  height: 10px;
+  background: black;
+}
+
+div.eyebrow {
+  border-top-left-radius: 30px 10px;
+  border-top-right-radius: 30px 10px;
+}
+
+div.eyebrow.left {
+  margin-left: -100px
+}
+
+div.eyebrow.right {
+  margin-left: 40px
+}
+
+/* ears */
+div.ear {
+  z-index: 101;
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin: -25px -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #ef9e33
+}
+
+div.ear.left {
+  margin: 50px -225px
+}
+
+div.ear.right {
+  margin: 50px 175px
+}
+
+/* animations on hover (for desktops) */
+section:hover ~ article p {
+  left: 100%;
+  opacity: 0
+}
+
+section.a22:hover ~ article p {
+  left: 20px;
+  opacity: 1
+}
+
+/* move eyes */
+section.a11:hover ~ article div.eye>.dot {
+  margin: 7px 7px
+}
+
+section.a12:hover ~ article div.eye>.dot {
+  margin: 0 25px
+}
+
+section.a13:hover ~ article div.eye>.dot {
+  margin: 7px 43px
+}
+
+section.a21:hover ~ article div.eye>.dot {
+  margin: 25px 0
+}
+
+section.a22:hover ~ article div.eye>.dot {
+  margin: 25px 25px
+}
+
+section.a23:hover ~ article div.eye>.dot {
+  margin: 25px 50px
+}
+
+section.a31:hover ~ article div.eye>.dot {
+  margin: 43px 7px
+}
+
+section.a32:hover ~ article div.eye>.dot {
+  margin: 50px 25px
+}
+
+section.a33:hover ~ article div.eye>.dot {
+  margin: 43px 43px
+}
+
+/* close eyes */
+section.a22:hover ~ article div.eye>.closed {
+  height: 50px
+}
+
+section.a22:hover ~ article div.eye>.closed.top {
+  height: 49px;
+  border-bottom: 1px solid rgba(237, 144, 23, 1)
+}
+
+/* smile */
+section.a22:hover ~ article div.nose {
+  margin-top: 57px
+}
+
+section.a22:hover ~ article div.mouth {
+  height: 40px;
+  border-bottom-left-radius: 50px 40px;
+  border-bottom-right-radius: 50px 40px;
+}
+
+section.a22:hover ~ article div.ear {
+  margin-top: 45px
+}
+
+/* move eyebrows */
+section.a11:hover ~ article div.eyebrow {
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg)
+}
+
+section.a11:hover ~ article div.eyebrow.left {
+  margin-top: -85px
+}
+
+section.a12:hover ~ article div.eyebrow {
+  margin-top: -85px
+}
+
+section.a13:hover ~ article div.eyebrow {
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg)
+}
+
+section.a13:hover ~ article div.eyebrow.right {
+  margin-top: -85px
+}
+
+section.a21:hover ~ article div.eyebrow {
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg)
+}
+
+section.a22:hover ~ article div.eyebrow {
+  margin-top: -85px
+}
+
+section.a23:hover ~ article div.eyebrow {
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg)
+}
+
+section.a31:hover ~ article div.eye>.dot {
+  margin: 43px 7px
+}
+
+section.a32:hover ~ article div.eye>.dot {
+  margin: 50px 25px
+}
+
+section.a33:hover ~ article div.eye>.dot {
+  margin: 43px 43px
+}
